@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply min-h-screen min-w-screen;
+
+  }
+  #root {
+    @apply min-h-screen min-w-screen;
+    @apply grid grid-cols-[200px_1fr] grid-rows-[80px_1fr_80px];
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    
+  }
+}
+
+
+@layer components {
+ 
+  header {
+    grid-area: header;
+    @apply bg-red-500;
+  }
+
+  aside {
+    grid-area: sidebar;
+    @apply bg-blue-500;
+  }
+
+  main {
+    grid-area: main;
+    @apply bg-green-500;
+  }
+
+  footer {
+    grid-area: footer;
+    @apply bg-yellow-500;
+  }
+}
+
