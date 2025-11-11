@@ -1,11 +1,15 @@
+import Canvas from "@libs/components/Canvas"
+import LeftSideBar from "@libs/components/LeftSideBar"
 
 function App() {
+
+  
 
   return (
     <>
       <header>Header</header>
-      <aside>Aside</aside>
-      <main>Main</main>
+      <LeftSideBar />
+      <main><Canvas /></main>
       <footer>Footer</footer>
     </>
   )

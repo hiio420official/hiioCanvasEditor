@@ -40,3 +40,8 @@
   }
 }
 
+@layer utilities {
+  .canvas {
+    @apply w-full h-full bg-white;
+  }
+}
